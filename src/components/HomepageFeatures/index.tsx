@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '开放',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/index_mountain.svg').default,
     description: (
       <>
         west2-online 是一个自由、开放的工作室，我们欢迎任何人加入我们的工作室。没有 KPI，没有压力，只有自由。
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '开源',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/index_tree.svg').default,
     description: (
       <>
         west2-online 喜欢开源，拥抱开源。我们坚信开源的力量，我们也希望能够为开源社区贡献一份力量。
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '共享',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/index_react.svg').default,
     description: (
       <>
         west2-online 坚信知识共享的力量，我们希望能够通过我们的努力，让更多的人受益。我们会将优秀、优质资源文章发布于我们的 <a href="https://wiki.west2.online">wiki</a> 上。

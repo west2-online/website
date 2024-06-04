@@ -55,8 +55,7 @@ const config: Config = {
 
   // 主题配置
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
-
+    // 色彩模式
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -150,7 +149,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [], // 这部分可以从docusaurus 文档中复现，我们删除了
-      copyright: `Copyright © ${new Date().getFullYear()} west2-online, Inc. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
+      copyright: `版权所有 © ${new Date().getFullYear()} west2-online Inc. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
     },
     prism: {
       theme: prismThemes.github,
