@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '开放',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        west2-online 是一个自由、开放的工作室，我们欢迎任何人加入我们的工作室。没有 KPI，没有压力，只有自由。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '开源',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        west2-online 喜欢开源，拥抱开源。我们坚信开源的力量，我们也希望能够为开源社区贡献一份力量。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '共享',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        west2-online 坚信知识共享的力量，我们希望能够通过我们的努力，让更多的人受益。我们会将优秀、优质资源文章发布于我们的 <a href="https://wiki.west2.online">wiki</a> 上。
       </>
     ),
   },

@@ -39,7 +39,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/west2-online/website/tree/main/',
+          sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
@@ -56,8 +57,16 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    // 首页置顶的公告栏，尽量一句话结束
+    announcementBar: {
+      id: 'new_info',
+      content:
+        '我们发布了工作室成员 2024 开源之夏活动课题申请书！ <a target="_blank" rel="noopener noreferrer" href="https://west2-online.feishu.cn/wiki/XxpXwqtWkiALUwk6ZCqcd6gCnBe">点击查看</a>',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: false,
+    },
     navbar: {
       title: 'west2-online',
       logo: {
@@ -69,18 +78,64 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '关于我们',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'dropdown',
+          label: '培养方案',
+          position: 'left',
+          items: [
+            {
+              label: 'AI',
+              href: 'https://github.com/west2-online/learn-AI',
+            },
+            {
+              label: 'Android',
+              href: 'https://github.com/west2-online/learn-android',
+            },
+            {
+              label: 'frontends',
+              href: 'https://github.com/west2-online/learn-frontends',
+            },
+            {
+              label: 'Go',
+              href: 'https://github.com/west2-online/learn-go',
+            },
+            {
+              label: 'Java',
+              href: 'https://github.com/west2-online/learn-java',
+            },
+            {
+              label: 'Unity',
+              href: 'https://github.com/west2-online/learn-unity',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: '产品直达',
+          position: 'left',
+          items: [
+            {
+              label: '福大助手',
+              href: 'https://fzuhelper.w2fzu.com/',
+            },
+            {
+              label: '飞跃手册',
+              href: 'https://run.w2fzu.com/',
+            },
+          ],
+        },
+        {
+          href: 'https://wiki.west2.online',
+          label: 'Wiki',
+          position: 'right',
+        },
         {
           href: 'https://github.com/west2-online',
-          label: 'GitHub',
           position: 'right',
-        },
-        {
-          href: 'https://fzuhelper.w2fzu.com/',
-          label: 'fzuhelper',
-          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
