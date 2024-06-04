@@ -10,21 +10,28 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+    <div className={styles.hero} data-theme="dark">
+      <div className={styles.heroInner}>
+        <Heading as="h1" className={styles.heroProjectTagline}>
+          <span
+            className={styles.heroTitleTextHtml}
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: 'The <b>Organization</b> for fzuers'
+            }}
+          />
+          <h2> 西二在线成立于 1998 年，是福州大学最大的学生组织</h2>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+        <div className={styles.indexCtas}>
+          <Link className="button button--primary" to="/docs/intro">
+            关于我们
+          </Link>
+          <Link className="button button--info" to="/docs/recruitment">
+            加入我们
           </Link>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 

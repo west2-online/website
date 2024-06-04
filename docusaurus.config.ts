@@ -6,46 +6,38 @@ const config: Config = {
   title: 'west2-online',
   tagline: '福州大学西二在线工作室',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://site.west2.online',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
+  // Github pages 配置
   organizationName: 'west2-online', // Github Organization 名称
   projectName: 'website', // 仓库名称
   deploymentBranch: 'gh-pages', // 部署分支
   trailingSlash: false, // 是否保留尾部斜杠
 
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // 国际化，不过我们只需要中文就行了
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
 
+  // 预设
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
+          editUrl: // 编辑路径前缀
             'https://github.com/west2-online/website/tree/main/',
           sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -56,8 +48,21 @@ const config: Config = {
     ],
   ],
 
+  // 插件
+  plugins: [
+
+  ],
+
+  // 主题配置
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+
     // 首页置顶的公告栏，尽量一句话结束
     announcementBar: {
       id: 'new_info',
@@ -67,18 +72,19 @@ const config: Config = {
       textColor: '#091E42',
       isCloseable: false,
     },
+
+    // 导航栏
     navbar: {
       title: 'west2-online',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'west2-online logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/member',
           position: 'left',
-          label: '关于我们',
+          label: '成员列表',
         },
         {
           type: 'dropdown',
@@ -139,10 +145,12 @@ const config: Config = {
         },
       ],
     },
+
+    // 页脚
     footer: {
       style: 'dark',
-      links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} west2-online, Inc. Built with Docusaurus. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
+      links: [], // 这部分可以从docusaurus 文档中复现，我们删除了
+      copyright: `Copyright © ${new Date().getFullYear()} west2-online, Inc. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
     },
     prism: {
       theme: prismThemes.github,
