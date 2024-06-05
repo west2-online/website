@@ -1,41 +1,39 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+west2-online 官方网站源代码及发布托管
 
-### Installation
+## 迭代维护
 
-```
-$ yarn
-```
+我们使用 yarn 来进行包管理，下载好源代码后，使用
 
-### Local Development
-
-```
-$ yarn start
+```bash
+$ yarn install   # 安装依赖包
+$ yarn run start # 启动本地测试服务器
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+之后可以在`localhost:3000`中复查看到测试页面，测试服务器支持热重载
 
-### Build
+### 更新文档
 
+文档侧边栏`sidebars.ts`使用文件夹自动生成，当我们需要添加文档时，只需要在`docs`文件夹里添加文件即可，如果需要对文档进行分类，可以直接创建文件夹，然后把分类的文件放进文件夹中即可
+
+### 更新成员
+
+资源文件位于`src/components/Member`文件夹，编辑其中的`memberData.ts`即可
+
+## 文件结构
+
+```text
+.
+├── README.md
+├── babel.config.js
+├── components.json
+├── docs                  # 文档
+├── docusaurus.config.ts  # Docusaurus 配置
+├── sidebars.ts           # 侧边栏配置
+├── src                   # 页面源代码
+├── static                # 静态资源
+├── tailwind.config.js
+├── tsconfig.json
+└── yarn.lock
 ```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
