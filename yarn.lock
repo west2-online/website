@@ -1828,6 +1828,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@parrotjs/react-lazyload@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@parrotjs/react-lazyload/-/react-lazyload-0.0.5.tgz#e6d3d97dc8e780728898c9096761504a76f201bc"
+  integrity sha512-ddb4dO3eGKHU4f7MlCeyXOXcwSg0WwRdiLBuLrk1kKx2waq74F9uJHxmwbDg2Ua+GR+/VcUn1qL7NlGLiQNzzA==
+  dependencies:
+    intersection-observer-polyfill "^0.1.0"
+
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.npmmirror.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
@@ -5423,6 +5430,11 @@ interpret@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
+
+intersection-observer-polyfill@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmmirror.com/intersection-observer-polyfill/-/intersection-observer-polyfill-0.1.0.tgz#f9ef8e5a6f3e0e8173d0c0fdb563e47a9dda233c"
+  integrity sha512-kYxriUk7Dl8GPu2TuOFAbtG5+UK0LLrLzlUErF8R9w5iPWmrtfVZsjCYbGF0/SyRDo1VfHMOZYBB2svb2locbw==
 
 invariant@^2.2.4:
   version "2.2.4"

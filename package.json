@@ -20,6 +20,7 @@
     "@docusaurus/theme-mermaid": "^3.4.0",
     "@docusaurus/theme-search-algolia": "^3.4.0",
     "@mdx-js/react": "^3.0.0",
+    "@parrotjs/react-lazyload": "^0.0.5",
     "@radix-ui/react-avatar": "^1.0.4",
     "autoprefixer": "^10.4.19",
     "class-variance-authority": "^0.7.0",
