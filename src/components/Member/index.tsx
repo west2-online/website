@@ -1,6 +1,6 @@
 import { Avatar } from "@/components/ui/avatar"
-import BrowserOnly from '@docusaurus/BrowserOnly';
 import { memberData } from "@/components/Member/memberData";
+import GithubIcon from '@site/static/img/github.svg';
 import React, { useState, useMemo, useEffect } from 'react';
 
 export default function Component() {
@@ -65,9 +65,9 @@ export default function Component() {
 
         ))}
       </div>
-      {/* Focus 选择 */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">{activeYear + "年秋季"}</h2>
+        <h2 className="text-2xl font-bold mb-6">{(parseInt(activeYear,10) - 1) + " - " + activeYear + "学年"}</h2>
+        {/* Focus 选择 */}
         <div className="mb-4 flex flex-wrap">
           {focusOptionsWithCount.map(({ focus, count }) => (
             <div
@@ -81,25 +81,33 @@ export default function Component() {
           ))}
         </div>
         {/* 成员展示 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
           {filteredMembers.map((member) => (
             <div
               key={member.avatar}
-              className="flex flex-col items-center gap-2 bg-white dark:bg-gray-950 p-4 rounded-lg shadow-md"
+              className="flex flex-col items-center gap-1 bg-white dark:bg-gray-950 p-2 rounded-lg shadow-md" // 添加 max-w-xs 和 mx-auto 以限制卡片宽度并在其父容器中居中
             >
               <Avatar>
-              {LazyLoad ? (
+                {LazyLoad ? (
                   <LazyLoad>
                     <img src={"https://img.w2fzu.com/member/" + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
                   </LazyLoad>
                 ) : (
                   <div>Loading...</div>
-              )}
+                )}
               </Avatar>
               <div className="text-center">
-                <h3 className="font-semibold">{member.name}</h3>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">{member.major}</p>
-                {member.github !== "null" && <a href={"https://github.com/" + member.github}>{member.github}</a>}
+                <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
+                <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">{member.major}</p>
+                {member.github !== "null" && (
+                  <a
+                    href={"https://github.com/" + member.github}
+                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
+                  >
+                    <GithubIcon className="w-3 h-3 mr-1" />
+                    {member.github}
+                  </a>
+                )}
               </div>
             </div>
           ))}
