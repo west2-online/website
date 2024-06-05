@@ -1,12 +1,23 @@
 import { Avatar } from "@/components/ui/avatar"
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import { memberData } from "@/components/Member/memberData";
 import React, { useState, useMemo, useEffect } from 'react';
-import LazyLoad from '@parrotjs/react-lazyload'
 
 export default function Component() {
   const data = memberData
   const [activeYear, setActiveYear] = useState(Object.keys(data)[0]); // 默认为第一个年份
   const [activeFocus, setActiveFocus] = useState('All'); // 默认选中所有 focus
+
+  // 我们创建一个 state 来存储 LazyLoad 组件
+  const [LazyLoad, setLazyLoad] = useState(null);
+
+  useEffect(() => {
+    // 动态导入 LazyLoad 组件，并在客户端代码执行时设置 state
+    import('@parrotjs/react-lazyload').then(LazyLoadModule => {
+      setLazyLoad(() => LazyLoadModule.default);
+    });
+  }, []);
+
 
   // 当 activeYear 改变时，检查 focus 是否存在于新的年份中
   useEffect(() => {
@@ -77,9 +88,13 @@ export default function Component() {
               className="flex flex-col items-center gap-2 bg-white dark:bg-gray-950 p-4 rounded-lg shadow-md"
             >
               <Avatar>
-                <LazyLoad>
-                  <img src={"https://img.w2fzu.com/member/" + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
-                </LazyLoad>
+              {LazyLoad ? (
+                  <LazyLoad>
+                    <img src={"https://img.w2fzu.com/member/" + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
+                  </LazyLoad>
+                ) : (
+                  <div>Loading...</div>
+              )}
               </Avatar>
               <div className="text-center">
                 <h3 className="font-semibold">{member.name}</h3>
