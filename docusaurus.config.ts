@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import * as path from "node:path";
 
 const config: Config = {
   title: 'west2-online',
@@ -50,7 +51,31 @@ const config: Config = {
 
   // 插件
   plugins: [
-
+    function aliasPlugin() {
+      return {
+        name: "alias-plugin",
+        configureWebpack(config) {
+          return {
+            resolve: {
+              alias: {
+                "@": path.resolve(__dirname, 'src/')
+              },
+            },
+          };
+        },
+      }
+    },
+    async function tailwindPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
   ],
 
   // 主题配置
