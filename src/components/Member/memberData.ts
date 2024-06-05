@@ -7,12 +7,7 @@ type MemberData = Record<string, {
 }[]>
 
 export const memberData: MemberData = {
-  "2023": [
-    // { avatar: "/placeholder-avatar.jpg", name: "John Doe", profession: "Software Engineer" },
-    // { avatar: "/placeholder-avatar.jpg", name: "Jane Smith", profession: "Product Manager" },
-    // { avatar: "/placeholder-avatar.jpg", name: "Michael Johnson", profession: "UI/UX Designer" },
-    // { avatar: "/placeholder-avatar.jpg", name: "Emily Davis", profession: "Data Analyst" },
-  ],
+  "2023": [],
   "2022": [
     { avatar: "2022/frontends_python_zyy.jpg", name: "张艺耀", focus: "前端", major:"21级人工智能", github: "1379255913" },
     { avatar: "2022/frontends_python_wy.jpg", name: "吴悠", focus: "Python", major:"21级给排水", github: "null" },
@@ -67,4 +62,16 @@ export const memberData: MemberData = {
     { avatar: "2022/art_lxy.jpg", name: "林心悦", focus: "美术", major:"21级数媒", github: "null" },
     { avatar: "2022/art_hcx.jpg", name: "黄晨曦", focus: "美术", major:"21级信管", github: "mmmki" },
   ],
+  "2021": [],
+  "2020": [],
+  "2019": [],
+  "2018": [],
+  "2017": [],
+  "2016": [],
+  "2015": [],
+  "2014": [],
+  "2013": [],
+  "2012": [],
+  "2011": [],
+  "2010": [],
 }

@@ -1,0 +1,20 @@
+/* 在你的 CSS 文件中添加以下样式 */
+/* 自定义滚动条的样式 */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 10px; /* 设置滚动条的宽度 */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 设置滚动条的背景色 */
+    border-radius: 10px; /* 设置滚动条的圆角 */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #888; /* 设置滚动条的颜色 */
+    border-radius: 10px; /* 设置滚动条的圆角 */
+    border: 3px solid #f1f1f1; /* 设置滚动条的边框 */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 设置滚动条鼠标悬停时的颜色 */
+}

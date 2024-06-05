@@ -2,11 +2,20 @@ import { Avatar } from "@/components/ui/avatar"
 import { memberData } from "@/components/Member/memberData";
 import GithubIcon from '@site/static/img/github.svg';
 import React, { useState, useMemo, useEffect } from 'react';
+import './styles.module.css';
 
 export default function Component() {
   const data = memberData
   const [activeYear, setActiveYear] = useState(Object.keys(data)[0]); // 默认为第一个年份
   const [activeFocus, setActiveFocus] = useState('All'); // 默认选中所有 focus
+  const [isExpanded, setIsExpanded] = useState(false); // 默认不展开年份选择
+
+  const imgPrefix = "https://img.w2fzu.com/member/"
+  const githubPrefix = "https://github.com/"
+  const visibleYearsCount = 3; // 可见年份数量
+
+  const sortedYears = Object.keys(data).sort((a, b) => b.localeCompare(a));
+  const displayedYears = isExpanded ? sortedYears : sortedYears.slice(0, visibleYearsCount);
 
   // 我们创建一个 state 来存储 LazyLoad 组件
   const [LazyLoad, setLazyLoad] = useState(null);
@@ -51,22 +60,29 @@ export default function Component() {
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">
       {/* 年份选择 */}
-      <div className="mb-4 flex space-x-2">
-        {Object.keys(data).map((year) => (
+      <div className="mb-4 flex flex-wrap">
+        {displayedYears.map((year) => (
           <div
-              key={year}
-              className={`px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium transition ease-in-out duration-300 cursor-pointer
-                        ${activeYear === year ? 'bg-[var(--ifm-color-primary)] text-white' : 'text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-[var(--ifm-color-primary-dark)]'}`}
-              onClick={() => setActiveYear(year)}
-            >
-              {year} ({data[year].length})
+            key={year}
+            className={`px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium transition ease-in-out duration-300 cursor-pointer
+            ${activeYear === year ? 'bg-[var(--ifm-color-primary)] text-white' : 'text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-[var(--ifm-color-primary-dark)]'}`}
+            onClick={() => setActiveYear(year)}
+          >
+            {year} ({data[year].length})
           </div>
-
-
         ))}
+        {Object.keys(data).length > visibleYearsCount && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium bg-[var(--ifm-color-primary)] cursor-pointer transition ease-in-out duration-300 text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-[var(--ifm-color-primary-dark)]'"
+          >
+            {isExpanded ? '收起' : '更多'}
+          </button>
+        )}
       </div>
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">{(parseInt(activeYear,10) - 1) + " - " + activeYear + "学年"}</h2>
+        <p><u>注:方向按成为正式成员时的聚焦方向归类，有多个方向以优先级最高的方向作为分类依据</u></p>
         {/* Focus 选择 */}
         <div className="mb-4 flex flex-wrap">
           {focusOptionsWithCount.map(({ focus, count }) => (
@@ -90,7 +106,7 @@ export default function Component() {
               <Avatar>
                 {LazyLoad ? (
                   <LazyLoad>
-                    <img src={"https://img.w2fzu.com/member/" + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
+                    <img src={imgPrefix + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
                   </LazyLoad>
                 ) : (
                   <div>Loading...</div>
@@ -101,7 +117,7 @@ export default function Component() {
                 <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">{member.major}</p>
                 {member.github !== "null" && (
                   <a
-                    href={"https://github.com/" + member.github}
+                    href={githubPrefix + member.github}
                     className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
                   >
                     <GithubIcon className="w-3 h-3 mr-1" />
