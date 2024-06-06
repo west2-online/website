@@ -1,20 +1,18 @@
 import { Avatar } from "@/components/ui/avatar"
-import { memberData } from "@/components/Member/memberData";
+import { memberData, imgPrefix, githubPrefix, visibleYearsCount } from "@/components/Member/memberData";
 import GithubIcon from '@site/static/img/github.svg';
+import BlogIcon from '@site/static/img/blog.svg';
 import React, { useState, useMemo, useEffect } from 'react';
 import './styles.module.css';
 
 export default function Component() {
   const data = memberData
-  const [activeYear, setActiveYear] = useState(Object.keys(data)[0]); // 默认为第一个年份
+  const sortedYears = Object.keys(memberData).sort((a, b) => b.localeCompare(a));
+
+  const [activeYear, setActiveYear] = useState(sortedYears[0]); // 默认为第一个年份
   const [activeFocus, setActiveFocus] = useState('All'); // 默认选中所有 focus
   const [isExpanded, setIsExpanded] = useState(false); // 默认不展开年份选择
 
-  const imgPrefix = "https://img.w2fzu.com/member/"
-  const githubPrefix = "https://github.com/"
-  const visibleYearsCount = 3; // 可见年份数量
-
-  const sortedYears = Object.keys(data).sort((a, b) => b.localeCompare(a));
   const displayedYears = isExpanded ? sortedYears : sortedYears.slice(0, visibleYearsCount);
 
   // 我们创建一个 state 来存储 LazyLoad 组件
@@ -113,15 +111,28 @@ export default function Component() {
                 )}
               </Avatar>
               <div className="text-center">
+                {/* name */}
                 <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
+                {/* major */}
                 <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">{member.major}</p>
-                {member.github !== "null" && (
+                {/* Github link */}
+                {member.github !== undefined && (
                   <a
                     href={githubPrefix + member.github}
                     className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
                   >
                     <GithubIcon className="w-3 h-3 mr-1" />
                     {member.github}
+                  </a>
+                )}
+                {/* blog link */}
+                {member.blog && (
+                  <a
+                    href={member.blog.url}
+                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
+                  >
+                    <BlogIcon className="w-3 h-3 mr-1" />
+                    {member.blog.display}
                   </a>
                 )}
               </div>

@@ -1,4 +1,3 @@
-/* 在你的 CSS 文件中添加以下样式 */
 /* 自定义滚动条的样式 */
 .scrollbar-custom::-webkit-scrollbar {
     width: 10px; /* 设置滚动条的宽度 */
