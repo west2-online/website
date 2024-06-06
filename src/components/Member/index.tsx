@@ -70,12 +70,12 @@ export default function Component() {
           </div>
         ))}
         {Object.keys(data).length > visibleYearsCount && (
-          <button
+          <div
             onClick={() => setIsExpanded(!isExpanded)}
             className="px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium bg-[var(--ifm-color-primary)] cursor-pointer transition ease-in-out duration-300 text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-[var(--ifm-color-primary-dark)]'"
           >
-            {isExpanded ? '收起' : '更多'}
-          </button>
+            {isExpanded ? '< 收起' : '> 更多'}
+          </div>
         )}
       </div>
       <div className="mb-12">
