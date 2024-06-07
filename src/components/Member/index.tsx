@@ -121,6 +121,7 @@ export default function Component() {
                 {member.github !== undefined && (
                   <a
                     href={githubPrefix + member.github}
+                    target="_blank"
                     className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs truncate max-w-xs"
                   >
                     <GithubIcon className="w-3 h-3 mr-1" />
@@ -131,6 +132,7 @@ export default function Component() {
                 {member.blog && (
                   <a
                     href={member.blog.url}
+                    target="_blank"
                     className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs truncate max-w-xs"
                   >
                     <BlogIcon className="w-3 h-3 mr-1" />
