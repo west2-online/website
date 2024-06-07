@@ -117,6 +117,7 @@ export const memberData: MemberData = {
     { avatar:"2023/162304124.jpg",  name:"彭杰",  focus:"Android",  major:"23级地质工程",  github:"CubeSugarCheese" },
     { avatar:"2023/222100406.jpg",  name:"陈麓同",  focus:"Python",  major:"21级软件工程",  github:"clt123haha" },
     { avatar:"2023/132101234.jpg",  name:"罗宇杰",  focus:"美术",  major:"21级电气工程",  github:"Recorder132" },
+    { avatar:"2023/832203319.jpg",  name:"郑欣",  focus:"美术",  major:"22级软件工程",  github:"061x" },
   ],
   "2022": [
     { avatar: "2022/frontends_python_zyy.jpg", name: "张艺耀", focus: "前端", major:"21级人工智能", github: "1379255913" },
