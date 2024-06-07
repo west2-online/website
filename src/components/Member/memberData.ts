@@ -49,7 +49,7 @@ export function compareMembers(a: MemberData[string][number], b: MemberData[stri
     if (githubComparison !== 0) return githubComparison;
     const blogComparison = compareStrings(a.blog?.display, b.blog?.display);
     if (blogComparison !== 0) return blogComparison;
-    return compareStrings(a.github, b.github);
+    return compareStrings(a.name, b.name);
   }
   if (aHasGithub && aHasBlog) return -1;
   if (bHasGithub && bHasBlog) return 1;
@@ -67,7 +67,9 @@ export function compareMembers(a: MemberData[string][number], b: MemberData[stri
       (aHasBlog && !aHasGithub && bHasBlog && !bHasBlog)) {
     const aValue = aHasGithub ? a.github! : a.blog!.display;
     const bValue = bHasGithub ? b.github! : b.blog!.display;
-    return compareStrings(aValue, bValue);
+    const comparison = compareStrings(aValue, bValue);
+    if (comparison !== 0) return comparison;
+    return compareStrings(a.name, b.name)
   }
 
   // 都没有，按姓名字典序排列
