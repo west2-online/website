@@ -22,10 +22,63 @@ type MemberData = Record<string, {
   }
 }[]>
 
+function compareStrings(a: string | undefined, b: string | undefined): number {
+  if (a && b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  }
+  return 0;
+}
+
+/*
+  优先展示 GitHub ID 和 blog 都有的同学
+  如果都只有一个，优先展示有 GitHub ID 的同学
+  如果都没有，按姓名字典序排列
+
+  比较 GitHub id 和 blog 时也按字典序排列
+*/
+export function compareMembers(a: MemberData[string][number], b: MemberData[string][number]): number {
+  const aHasGithub = !!a.github;
+  const aHasBlog = !!a.blog;
+  const bHasGithub = !!b.github;
+  const bHasBlog = !!b.blog;
+
+  // 两者都有
+  if (aHasGithub && aHasBlog && bHasGithub && bHasBlog) {
+    // 先比较 github，再比较 blog
+    const githubComparison = compareStrings(a.github, b.github);
+    if (githubComparison !== 0) return githubComparison;
+    const blogComparison = compareStrings(a.blog?.display, b.blog?.display);
+    if (blogComparison !== 0) return blogComparison;
+    return compareStrings(a.github, b.github);
+  }
+  if (aHasGithub && aHasBlog) return -1;
+  if (bHasGithub && bHasBlog) return 1;
+
+  // 有其中之一
+  if ((aHasGithub || aHasBlog) && !(bHasGithub || bHasBlog)) return -1;
+  if (!(aHasGithub || aHasBlog) && (bHasGithub || bHasBlog)) return 1;
+
+  // 如果一个成员有 github，另一个成员有 blog，则拥有 github 的成员优先
+  if (aHasGithub && !aHasBlog && bHasBlog && !bHasGithub) return -1;
+  if (aHasBlog && !aHasGithub && bHasGithub && !bHasBlog) return 1;
+
+  // 如果两个成员都只有 github 或者都只有 blog，按字典序排列
+  if ((aHasGithub && !aHasBlog && bHasGithub && !bHasBlog) ||
+      (aHasBlog && !aHasGithub && bHasBlog && !bHasBlog)) {
+    const aValue = aHasGithub ? a.github! : a.blog!.display;
+    const bValue = bHasGithub ? b.github! : b.blog!.display;
+    return compareStrings(aValue, bValue);
+  }
+
+  // 都没有，按姓名字典序排列
+  return compareStrings(a.name, b.name);
+}
+
+
 export const memberData: MemberData = {
   "2023": [
     { avatar:"2023/102101226.jpg",  name:"张鑫",  focus:"Go",  major:"21级计算机类",  github:"XZ0730" },
-    { avatar:"2023/832203320.jpg",  name:"郑浩宁",  focus:"Go",  major:"22级软件工程",  github:"wushiling50",  blog:{ display: "github.io", url:"https://wushiling50.github.io/"} },
+    { avatar:"2023/832203320.jpg",  name:"郑浩宁",  focus:"Go",  major:"22级软件工程",  github:"wushiling50",  blog:{ display: "wushiling50", url:"https://wushiling50.github.io/"} },
     { avatar:"2023/222200331.jpg",  name:"翁鹏",  focus:"Java",  major:"22级软件工程",  github:"Poldroc" },
     { avatar:"2023/832204101.jpg",  name:"马雁语",  focus:"美术",  major:"22级数媒", blog:{ display: "zenor0-site", url:"blog.zenor0.site"} },
     { avatar:"2023/182000136.jpg",  name:"杨宇杰",  focus:"Unity",  major:"21级人工智能",  github:"YpoplarD" },

@@ -1,5 +1,5 @@
 import { Avatar } from "@/components/ui/avatar"
-import { memberData, imgPrefix, githubPrefix, visibleYearsCount } from "@/components/Member/memberData";
+import { memberData, imgPrefix, githubPrefix, visibleYearsCount, compareMembers } from "@/components/Member/memberData";
 import GithubIcon from '@site/static/img/github.svg';
 import BlogIcon from '@site/static/img/blog.svg';
 import React, { useState, useMemo, useEffect } from 'react';
@@ -96,7 +96,9 @@ export default function Component() {
         </div>
         {/* 成员展示 */}
         <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
-          {filteredMembers.map((member) => (
+          {filteredMembers.
+            sort(compareMembers).
+            map((member) => (
             <div
               key={member.avatar}
               className="flex flex-col items-center gap-1 bg-white dark:bg-gray-950 p-2 rounded-lg shadow-md" // 添加 max-w-xs 和 mx-auto 以限制卡片宽度并在其父容器中居中
