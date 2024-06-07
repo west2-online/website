@@ -82,7 +82,7 @@ export const memberData: MemberData = {
     { avatar:"2023/102101226.jpg",  name:"张鑫",  focus:"Go",  major:"21级计算机类",  github:"XZ0730" },
     { avatar:"2023/832203320.jpg",  name:"郑浩宁",  focus:"Go",  major:"22级软件工程",  github:"wushiling50",  blog:{ display: "wushiling50", url:"https://wushiling50.github.io/"} },
     { avatar:"2023/222200331.jpg",  name:"翁鹏",  focus:"Java",  major:"22级软件工程",  github:"Poldroc" },
-    { avatar:"2023/832204101.jpg",  name:"马雁语",  focus:"美术",  major:"22级数媒", blog:{ display: "zenor0-site", url:"blog.zenor0.site"} },
+    { avatar:"2023/832204101.jpg",  name:"马雁语",  focus:"美术",  major:"22级数媒"},
     { avatar:"2023/182000136.jpg",  name:"杨宇杰",  focus:"Unity",  major:"21级人工智能",  github:"YpoplarD" },
     { avatar:"2023/832203325.jpg",  name:"高毅飞",  focus:"Java",  major:"22级软件工程",  github:"emptyOVO" },
     { avatar:"2023/112101405.jpg",  name:"冯梦佳",  focus:"美术",  major:"21级数字媒体技术" },
