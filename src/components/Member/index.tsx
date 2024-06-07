@@ -95,7 +95,7 @@ export default function Component() {
           ))}
         </div>
         {/* 成员展示 */}
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
           {filteredMembers.
             sort(compareMembers).
             map((member) => (
@@ -121,7 +121,7 @@ export default function Component() {
                 {member.github !== undefined && (
                   <a
                     href={githubPrefix + member.github}
-                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
+                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs truncate max-w-xs"
                   >
                     <GithubIcon className="w-3 h-3 mr-1" />
                     {member.github}
@@ -131,7 +131,7 @@ export default function Component() {
                 {member.blog && (
                   <a
                     href={member.blog.url}
-                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs"
+                    className="flex items-center justify-center text-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary-light)] transition duration-300 text-xs truncate max-w-xs"
                   >
                     <BlogIcon className="w-3 h-3 mr-1" />
                     {member.blog.display}
