@@ -1,6 +1,19 @@
 import { data2023 } from "@site/static/member/2023";
 import { data2022 } from "@site/static/member/2022";
 import { data2021 } from "@site/static/member/2021";
+import { data2020 } from "@site/static/member/2020";
+import { data2019 } from "@site/static/member/2019";
+import { data2018 } from "@site/static/member/2018";
+import { data2017 } from "@site/static/member/2017";
+import { data2016 } from "@site/static/member/2016";
+import { data2015 } from "@site/static/member/2015";
+import { data2014 } from "@site/static/member/2014";
+import { data2013 } from "@site/static/member/2013";
+import { data2012 } from "@site/static/member/2012";
+import { data2011 } from "@site/static/member/2011";
+import { data2010 } from "@site/static/member/2010";
+import { data2009 } from "@site/static/member/2009";
+
 
 export const imgPrefix = "https://img.w2fzu.com/member/"
 export const githubPrefix = "https://github.com/"
@@ -85,15 +98,16 @@ export const memberData: MemberData = {
   "2023": data2023,
   "2022": data2022,
   "2021": data2021,
-  "2020": [],
-  "2019": [],
-  "2018": [],
-  "2017": [],
-  "2016": [],
-  "2015": [],
-  "2014": [],
-  "2013": [],
-  "2012": [],
-  "2011": [],
-  "2010": [],
+  "2020": data2020,
+  "2019": data2019,
+  "2018": data2018,
+  "2017": data2017,
+  "2016": data2016,
+  "2015": data2015,
+  "2014": data2014,
+  "2013": data2013,
+  "2012": data2012,
+  "2011": data2011,
+  "2010": data2010,
+  "2009": data2009,
 }
