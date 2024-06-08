@@ -1,0 +1,32 @@
+// 2021.ts
+
+export const data2021 = [
+    { avatar: "2021/032003143.jpg", name: "戴琦琪", focus: "Unity", major: "20级信息安全"},
+    { avatar: "2021/222000316.jpg", name: "谭楷", focus: "Unity", major: "20级软件工程"},
+    { avatar: "2021/831903310.jpg", name: "刘宇翔", focus: "Unity", major: "19级软件工程"},
+    { avatar: "2021/832003314.jpg", name: "兰弘羿", focus: "Unity", major: "20级软件工程"},
+    { avatar: "2021/031904102.jpg", name: "曾庆聪", focus: "Golang", major: "19级大数据"},
+    { avatar: "2021/041901328.jpg", name: "王真平", focus: "Golang", major: "19级计算机"},
+    { avatar: "2021/221900328_2.jpg", name: "余一鸣", focus: "Golang", major: "19级软件工程"},
+    { avatar: "2021/031902435.jpg", name: "华颖星", focus: "产品", major: "19级计算机"},
+    { avatar: "2021/032004142.jpg", name: "卢恬英", focus: "产品", major: "20级大数据"},
+    { avatar: "2021/221900329.jpg", name: "俞润鼎", focus: "Python", major: "19级软件工程"},
+    { avatar: "2021/831903207.jpg", name: "陈苏霖", focus: "Android", major: "19级软件工程(梅努斯)"},
+    { avatar: "2021/032005102.jpg", name: "陈明轩", focus: "Android", major: "20级人工智能"},
+    { avatar: "2021/831903309.jpg", name: "林宇涵", focus: "Android", major: "19级软件工程"},
+    { avatar: "2021/061900209.jpg", name: "黄志翔", focus: "Android", major: "19级计算机(卓越班)"},
+    { avatar: "2021/031902524.jpg", name: "杨少杰", focus: "前端", major: "19级计算机"},
+    { avatar: "2021/221900332.jpg", name: "郑世杰", focus: "前端", major: "19级软件工程"},
+    { avatar: "2021/032001115.jpg", name: "翁文辉", focus: "前端", major: "20级数学"},
+    { avatar: "2021/111901415.jpg", name: "黄巧丽", focus: "前端", major: "19级数字媒体技术"},
+    { avatar: "2021/221900217.jpg", name: "黄欧成", focus: "Java", major: "19级软件工程"},
+    { avatar: "2021/831903119.jpg", name: "林喆智", focus: "Java", major: "19级软件工程"},
+    { avatar: "2021/041901408.jpg", name: "杨啟超", focus: "Java", major: "19级计算机"},
+    { avatar: "2021/031902410.jpg", name: "林洁楠", focus: "Java", major: "19级计算机"},
+    { avatar: "2021/832003307.jpg", name: "黄于思", focus: "Java", major: "20级软件工程"},
+    { avatar: "2021/832003325.jpg", name: "朱丹清", focus: "Java", major: "20级软件工程"},
+    { avatar: "2021/031902606.jpg", name: "何凱", focus: "iOS", major: "19级计算机"},
+    { avatar: "2021/032005216.jpg", name: "薛天霖", focus: "美术", major: "20级人工智能"},
+    { avatar: "2021/032002328.jpg", name: "王帆", focus: "美术", major: "20级计算机"},
+    { avatar: "2021/031802125.jpg", name: "苏垚", focus: "美术", major: "19级计算机"}
+]

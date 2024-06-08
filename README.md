@@ -19,7 +19,10 @@ $ yarn run start # 启动本地测试服务器
 
 ### 更新成员
 
-资源文件位于`src/components/Member`文件夹，编辑其中的`memberData.ts`即可
+定义文件位于`src/components/Member`文件夹，编辑其中的`memberData.ts`即可
+资源文件位于`static/member`文件夹，按照先前年份规范添加新的一年，之后在`memberData.ts`中导入即可
+
+头像请先上传至又拍云的`w2-picture`对象存储`member`目录下（按年份区分）
 
 ## 文件结构
 
