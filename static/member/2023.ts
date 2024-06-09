@@ -1,6 +1,7 @@
 // 2023.ts
 
 export const data2023 = [
+    { avatar:"2023/222200314.jpg",  name:"吴荣榜",  focus:"前端",  major:"22级软件工程",  github:"ROBINRUGAN",  blog:{ display: "MEWWW", url:"https://www.cnblogs.com/ROBINRUGAN"} },
     { avatar: "2023/102101226.jpg",  name: "张鑫",  focus: "Go",  major: "21级计算机类",  github: "XZ0730" },
     { avatar: "2023/832203320.jpg",  name: "郑浩宁",  focus: "Go",  major: "22级软件工程",  github: "wushiling50",  blog:{ display: "wushiling50", url: "https://wushiling50.github.io/"} },
     { avatar: "2023/222200331.jpg",  name: "翁鹏",  focus: "Java",  major: "22级软件工程",  github: "Poldroc" },
