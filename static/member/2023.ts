@@ -1,7 +1,7 @@
 // 2023.ts
 
 export const data2023 = [
-    { avatar:"2023/222200314.jpg",  name:"吴荣榜",  focus:"前端",  major:"22级软件工程",  github:"ROBINRUGAN",  blog:{ display: "MEWWW", url:"https://www.cnblogs.com/ROBINRUGAN"} },
+    { avatar: "2023/222200314.jpg",  name: "吴荣榜",  focus: "前端",  major: "22级软件工程",  github: "ROBINRUGAN",  blog:{ display: "MEWWW", url: "https://www.cnblogs.com/ROBINRUGAN"} },
     { avatar: "2023/102101226.jpg",  name: "张鑫",  focus: "Go",  major: "21级计算机类",  github: "XZ0730" },
     { avatar: "2023/832203320.jpg",  name: "郑浩宁",  focus: "Go",  major: "22级软件工程",  github: "wushiling50",  blog:{ display: "wushiling50", url: "https://wushiling50.github.io/"} },
     { avatar: "2023/222200331.jpg",  name: "翁鹏",  focus: "Java",  major: "22级软件工程",  github: "Poldroc" },
@@ -39,4 +39,5 @@ export const data2023 = [
     { avatar: "2023/162304124.jpg",  name: "彭杰",  focus: "Android",  major: "23级地质工程",  github: "CubeSugarCheese" },
     { avatar: "2023/222100406.jpg",  name: "陈麓同",  focus: "Python",  major: "21级软件工程",  github: "clt123haha" },
     { avatar: "2023/132101234.jpg",  name: "罗宇杰",  focus: "美术",  major: "21级电气工程",  github: "Recorder132" },
+    { avatar: "2023/832203319.jpg",  name: "郑欣",  focus: "美术",  major: "22级软件工程",  github: "061x" },
 ]
