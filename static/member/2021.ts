@@ -12,7 +12,7 @@ export const data2021 = [
     { avatar: "2021/032004142.jpg", name: "卢恬英", focus: "产品", major: "20级大数据" },
     { avatar: "2021/221900329.jpg", name: "俞润鼎", focus: "Python", major: "19级软件工程" },
     { avatar: "2021/831903207.jpg", name: "陈苏霖", focus: "Android", major: "19级软件工程(梅努斯)" },
-    { avatar: "2021/032005102.jpg", name: "陈明轩", focus: "Android", major: "20级人工智能" },
+    { avatar: "2021/032005102.jpg", name: "陈明轩", focus: "Android", major: "中国科学院大学" },
     { avatar: "2021/831903309.jpg", name: "林宇涵", focus: "Android", major: "19级软件工程" },
     { avatar: "2021/061900209.jpg", name: "黄志翔", focus: "Android", major: "19级计算机(卓越班)" },
     { avatar: "2021/031902524.jpg", name: "杨少杰", focus: "前端", major: "19级计算机" },
