@@ -20,7 +20,9 @@ function HomepageHeader() {
               __html: 'The <b>Organization</b> for fzuers'
             }}
           />
-          <h2> 西二在线成立于 1998 年，是福州大学最大的学生组织</h2>
+        </Heading>
+        <Heading as="h2" className='text-white'>
+            西二在线成立于 1998 年，是福州大学最大的学生组织
         </Heading>
         <div className={styles.indexCtas}>
           <Link className="button button--primary" to="/docs/intro">
