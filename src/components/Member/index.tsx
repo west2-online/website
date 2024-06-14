@@ -1,8 +1,11 @@
-import { Avatar } from "@/components/ui/avatar"
-import { memberData, imgPrefix, githubPrefix, visibleYearsCount, compareMembers } from "@/components/Member/memberData";
-import GithubIcon from '@site/static/img/github.svg';
+import { useEffect, useMemo, useState } from 'react';
+import LazyLoad from 'react-lazyload';
+
+import { compareMembers, githubPrefix, imgPrefix, memberData, visibleYearsCount } from "@/components/Member/memberData";
+import { Avatar } from "@/components/ui/avatar";
 import BlogIcon from '@site/static/img/blog.svg';
-import React, { useState, useMemo, useEffect } from 'react';
+import GithubIcon from '@site/static/img/github.svg';
+
 import './styles.module.css';
 
 export default function Component() {
@@ -14,17 +17,6 @@ export default function Component() {
   const [isExpanded, setIsExpanded] = useState(false); // 默认不展开年份选择
 
   const displayedYears = isExpanded ? sortedYears : sortedYears.slice(0, visibleYearsCount);
-
-  // 我们创建一个 state 来存储 LazyLoad 组件
-  const [LazyLoad, setLazyLoad] = useState(null);
-
-  useEffect(() => {
-    // 动态导入 LazyLoad 组件，并在客户端代码执行时设置 state
-    import('@parrotjs/react-lazyload').then(LazyLoadModule => {
-      setLazyLoad(() => LazyLoadModule.default);
-    });
-  }, []);
-
 
   // 当 activeYear 改变时，检查 focus 是否存在于新的年份中
   useEffect(() => {
@@ -104,13 +96,9 @@ export default function Component() {
               className="flex flex-col items-center gap-1 bg-white dark:bg-gray-950 p-2 rounded-lg shadow-md" // 添加 max-w-xs 和 mx-auto 以限制卡片宽度并在其父容器中居中
             >
               <Avatar>
-                {LazyLoad ? (
-                  <LazyLoad>
-                    <img src={imgPrefix + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
-                  </LazyLoad>
-                ) : (
-                  <div>Loading...</div>
-                )}
+                <LazyLoad offset={200}>
+                  <img src={imgPrefix + member.avatar} alt={member.name} className="w-20 h-20 rounded-full" />
+                </LazyLoad>
               </Avatar>
               <div className="text-center">
                 {/* name */}
@@ -118,7 +106,7 @@ export default function Component() {
                 {/* major */}
                 <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">{member.major}</p>
                 {/* Github link */}
-                {member.github !== undefined && (
+                {member.github && (
                   <a
                     href={githubPrefix + member.github}
                     target="_blank"
