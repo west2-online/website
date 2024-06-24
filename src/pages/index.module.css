@@ -25,6 +25,14 @@
   margin-bottom: 26px;
 }
 
+.heroLogo {
+  animation-duration: 2s;
+  animation-name: b;
+  float: right;
+  height: auto;
+  margin-top: 20px;
+}
+
 /* @keyframes jack-in-the-box {
   0% {
     opacity: 0;
