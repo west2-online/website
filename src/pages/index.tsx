@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Lottie from 'react-lottie'
-import logoData from '@site/static/lottie/logo.json'
+import logoData from '../../static/lottie/logo.json'
 
 import styles from './index.module.css';
 
