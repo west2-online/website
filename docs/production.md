@@ -27,7 +27,7 @@ sidebar_position: 3
 
 :::tip
 
-网站: [run.w2fzu.com](https://run.w2fzu.com/) ，项目托管于 [west2-online/fzu-run](https://github.com/west2-online/fzu-run/)
+网站: [run.w2fzu.com](https://run.west2.online/) ，项目托管于 [west2-online/fzu-run](https://github.com/west2-online/fzu-run/)
 
 :::
 
