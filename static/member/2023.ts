@@ -9,7 +9,7 @@ export const data2023 = [
     { avatar: "2023/182000136.jpg",  name: "杨宇杰",  focus: "Unity",  major: "21级人工智能",  github: "YpoplarD" },
     { avatar: "2023/832203325.jpg",  name: "高毅飞",  focus: "Java",  major: "22级软件工程",  github: "emptyOVO" },
     { avatar: "2023/112101405.jpg",  name: "冯梦佳",  focus: "美术",  major: "21级数字媒体技术" },
-    { avatar: "2023/102104118.jpg",  name: "陈广羽",  focus: "Python",  major: "21级人工智能",  github: "cgynb" },
+    { avatar: "2023/102104118.jpg",  name: "陈广羽",  focus: "Python",  major: "21级人工智能",  github: "co-gy" },
     { avatar: "2023/112201306.jpg",  name: "陈国涛",  focus: "Unity",  major: "22级物联网工程",  github: "Quie-koli" },
     { avatar: "2023/102204117.jpg",  name: "陈上铭",  focus: "Python",  major: "22级人工智能",  github: "SYguanxing" },
     { avatar: "2023/102103149.jpg",  name: "郑智荣",  focus: "Python",  major: "21级信息安全",  github: "zenor0",  blog:{ display: "zenor0-site", url: "https://blog.zenor0.site"} },
