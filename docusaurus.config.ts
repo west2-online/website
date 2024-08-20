@@ -173,7 +173,19 @@ const config: Config = {
     // 页脚
     footer: {
       style: 'dark',
-      links: [], // 这部分可以从docusaurus 文档中复现，我们删除了
+      links: [
+        {
+          html: `
+            <div style="display: flex; justify-content: center; align-items: center; color:#FFF;">
+              <span>本网站由</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="display: inline-flex; align-items: center;">
+                <img src="/img/upyun_logo.svg" alt="又拍云"  height= "20px" style="margin: 0 5px;" />
+              </a> 
+              <span>提供CDN加速/云存储服务</span>
+            </div>
+          `
+        }
+      ], // 这部分可以从docusaurus 文档中复现，我们删除了
       copyright: `版权所有 © ${new Date().getFullYear()} west2-online. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
     },
     prism: {
