@@ -132,6 +132,10 @@ const config: Config = {
               href: 'https://github.com/west2-online/learn-go',
             },
             {
+              label: 'HarmonyOS',
+              href: 'https://github.com/west2-online/learn-HarmonyOS',
+            },
+            {
               label: 'Java',
               href: 'https://github.com/west2-online/learn-java',
             },
@@ -147,12 +151,16 @@ const config: Config = {
           position: 'left',
           items: [
             {
-              label: '福大助手',
+              label: '福uu（福大助手）',
               href: 'https://fzuhelper.w2fzu.com/',
             },
             {
               label: '飞跃手册',
-              href: 'https://run.w2fzu.com/',
+              href: 'https://run.west2.online/',
+            },
+            {
+              label: '校园指南',
+              href: 'https://fzuwiki.west2.online/',
             },
           ],
         },
@@ -185,7 +193,7 @@ const config: Config = {
             </div>
           `
         }
-      ], // 这部分可以从docusaurus 文档中复现，我们删除了
+      ],
       copyright: `版权所有 © ${new Date().getFullYear()} west2-online. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
     },
     prism: {
