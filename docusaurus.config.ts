@@ -194,7 +194,7 @@ const config: Config = {
           `
         }
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} west2-online. 网站使用 Docusaurus 构建. <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a>`,
+      copyright: `版权所有 © ${new Date().getFullYear()} west2-online. 网站使用 Docusaurus 构建.<div/> <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a> <img src="/img/beian.png" height="14px" width="14px"style="margin: 0 5px;"/>闽公网安备35018302000171号`,
     },
     prism: {
       theme: prismThemes.github,
