@@ -40,4 +40,6 @@ export const data2023 = [
     { avatar: "2023/222100406.jpg",  name: "陈麓同",  focus: "Python",  major: "21级软件工程",  github: "clt123haha" },
     { avatar: "2023/132101234.jpg",  name: "罗宇杰",  focus: "美术",  major: "21级电气工程",  github: "Recorder132" },
     { avatar: "2023/832203319.jpg",  name: "郑欣",  focus: "美术",  major: "22级软件工程",  github: "061x" },
+    { avatar: "2023/832104130.jpg",  name: "谢晨怡",  focus: "美术",  major: "21级数字媒体技术" },
+    { avatar: "2023/062200237.jpg",  name: "林荣达",  focus: "Python",  major: "22级安全工程",  github: "linrongda" }
 ]
