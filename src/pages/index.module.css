@@ -61,11 +61,12 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: 24px;
+  
 }
 
-.indexCtas a,
+/* .indexCtas a, */
 .indexCtas a:hover {
-  color: black;
+  color: white !important;
 }
 
 .indexCtas a:last-of-type {
