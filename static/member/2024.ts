@@ -39,7 +39,7 @@ export const data2024 = [
     {'avatar': '2024/062200246.jpg', 'name': '晏宝仪', 'focus': 'Unity', 'major': '22级安全工程'},
     {'avatar': '2024/832204108.jpg', 'name': '李俊逸', 'focus': 'Unity', 'major': '22级数字媒体技术', 'github': 'Tibsalta-IC'},
     {'avatar': '2024/222200417.jpg', 'name': '林宇涛', 'focus': 'Go', 'major': '22级软件工程', 'github': 'lyt122'},
-    {'avatar': '2024/832203305.jpg', 'name': '庄佳敏', 'focus': '前端', 'major': '22级软件工程', 'github': 'Archer-Min'},
+    {'avatar': '2024/832203305.jpg', 'name': '庄佳敏', 'focus': 'Android', 'major': '22级软件工程', 'github': 'Archer-Min'},
     {'avatar': '2024/222200316.jpg', 'name': '陈奕逵', 'focus': 'Go', 'major': '22级软件工程', 'github': 'jsbjkskbs'},
     {'avatar': '2024/222200313.jpg', 'name': '杨祝竹', 'focus': '美术', 'major': '22级软件工程'},
     {'avatar': '2024/112301226.jpg', 'name': '金泽泰', 'focus': 'Android', 'major': '23级数字媒体技术', 'github': 'GoldenCreeperJ'}
