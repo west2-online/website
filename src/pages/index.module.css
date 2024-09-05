@@ -64,10 +64,6 @@
   
 }
 
-/* .indexCtas a, */
-.indexCtas a:hover {
-  color: white !important;
-}
 
 .indexCtas a:last-of-type {
   margin: 20px 36px;

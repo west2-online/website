@@ -28,13 +28,13 @@
   --ifm-color-primary-light: #fedba8;
   --ifm-color-primary-lighter: #fee3bb;
   --ifm-color-primary-lightest: #fffaf3;
-  --ifm-color-secondary: #995900;
-  --ifm-color-secondary-dark: #8a5000;
-  --ifm-color-secondary-darker: #824c00;
-  --ifm-color-secondary-darkest: #6b3e00;
-  --ifm-color-secondary-light: #a86200;
-  --ifm-color-secondary-lighter: #b06600;
-  --ifm-color-secondary-lightest: #995900;
+  /* --ifm-color-secondary: #ffffff;
+  --ifm-color-secondary-dark: #e6e6e6;
+  --ifm-color-secondary-darker: #d9d9d9;
+  --ifm-color-secondary-darkest: #b3b3b3;
+  --ifm-color-secondary-light: #ffffff;
+  --ifm-color-secondary-lighter: #ffffff;
+  --ifm-color-secondary-lightest: #ffffff; */
   /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
 }
 
