@@ -186,7 +186,7 @@ const config: Config = {
           html: `
             <div style="display: flex; justify-content: center; align-items: center; color:#FFF;">
               <span>本网站由</span>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="display: inline-flex; align-items: center;">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.upyun.com/?from=xi2" style="display: inline-flex; align-items: center;">
                 <img src="/img/upyun_logo.svg" alt="又拍云"  height= "20px" style="margin: 0 5px;" />
               </a> 
               <span>提供CDN加速/云存储服务</span>
