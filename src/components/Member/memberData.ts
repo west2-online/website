@@ -96,6 +96,7 @@ export function compareMembers(a: MemberData[string][number], b: MemberData[stri
 
 
 export const memberData: MemberData = {
+  "2025": data2025,
   "2024": data2024,
   "2023": data2023,
   "2022": data2022,
