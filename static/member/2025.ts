@@ -30,6 +30,7 @@ export const data2025 = [
     {'avatar': '2025/832403326.jpg', 'name': '张凯淞', 'focus': 'AI', 'major': '24级软件工程', 'github': 'zmlxzyh', 'blog': {'display': ' ', 'url': 'https://krisonzhang.cn/'}},
     {'avatar': '2025/102300217.jpg', 'name': '梁伟彬', 'focus': 'Go', 'major': '23级软件工程', 'github': '1341292919'},
     {'avatar': '2025/832403215.jpg', 'name': '李延晟', 'focus': 'Java', 'major': '24级软件工程', 'github': 'Moon-Meld', 'blog': {'display': ' ', 'url': 'https://moon-meld.github.io/'}},
+    {'avatar': '2025/832202111.jpg', 'name': '张光辉', 'focus': 'Java', 'major': '22级自动化', 'github': 'cantback'},
     {'avatar': '2025/102402136.jpg', 'name': '王智洋', 'focus': 'AI', 'major': '24级数据科学与大数据技术', 'github': 'MieSheeeep'},
     {'avatar': '2025/832303126.jpg', 'name': '卓逸', 'focus': 'Unity', 'major': '23级软件工程', 'github': 'rEpt6An'},
     {'avatar': '2025/102301519.jpg', 'name': '吴昊', 'focus': 'AI', 'major': '23级计算机科学与技术', 'github': 'W2919'}
