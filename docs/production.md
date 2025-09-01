@@ -5,11 +5,11 @@ sidebar_position: 3
 # 项目介绍
 
 
-## 福大助手
+## 福 uu
 
 :::tip
 
-网站: [fzuhelper.w2fzu.com](https://fzuhelper.w2fzu.com/)，前端 Private，后端发布于我们的 west2-online 组织仓库
+官网：[fzuhelper.w2fzu.com](https://fzuhelper.w2fzu.com/)，客户端与服务端均在我们的 west2-online 组织仓库开源
 
 :::
 
@@ -27,7 +27,7 @@ sidebar_position: 3
 
 :::tip
 
-网站: [run.west2.online](https://run.west2.online/) ，项目托管于 [west2-online/fzu-run](https://github.com/west2-online/fzu-run/)
+网站：[run.west2.online](https://run.west2.online/) ，项目托管于 [west2-online/fzu-run](https://github.com/west2-online/fzu-run/)
 
 :::
 
@@ -38,3 +38,15 @@ sidebar_position: 3
 不论是转专业亦或是保研、考研和出国，学生们面对的都是一场充满未知的信息战。
 
 我们深知信息差带来的困扰，因此，我们致力于提供一个文档站点，通过成功上岸的学长学姐的经验以及历年的资料，弥补信息差，为每一位福大学子提供尽可能明晰的方向指导。
+
+## 福州大学校园指南
+
+:::tip
+
+网站：[fzuwiki.west2.online](https://fzuwiki.west2.online/)，项目托管于 [west2-online/fzu-wiki](https://github.com/west2-online/fzu-wiki)
+
+:::
+
+福州大学校园指南是由西二在线工作室发起运营，福州大学学生共同维护的校内热点知识库，旨在为福州大学的学生提供一个方便的学习和生活参考。
+
+校园指南覆盖学校篇、新生篇、生活篇、学习篇等，希望为福大学子从入学起提供指引，少走弯路不求人，累计已帮助 8000 余位同学解决问题。
