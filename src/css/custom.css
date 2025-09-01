@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +18,16 @@
 
   --announcement-bar-bg-color: #FAFBFC;
   --announcement-bar-text-color: #091E42;
+
+  /* Member component colors */
+  --member-button-bg: #e5e7eb;
+  --member-button-text: #374151;
+  --member-button-hover-bg: var(--ifm-color-primary-lightest);
+  --member-button-hover-text: white;
+  --member-button-active-text: white;
+  --member-card-bg: #ffffff;
+  --member-card-shadow: rgba(0, 0, 0, 0.1);
+  --member-text-secondary: #6b7280;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -41,6 +50,16 @@
 
   --announcement-bar-bg-color: #252627;
   --announcement-bar-text-color: #E6E6E6;
+
+  /* Member component colors for dark mode */
+  --member-button-bg: #374151;
+  --member-button-text: #d1d5db;
+  --member-button-hover-bg: var(--ifm-color-primary-lightest);
+  --member-button-hover-text: #1f2937;
+  --member-button-active-text: #1f2937;
+  --member-card-bg: #1f2937;
+  --member-card-shadow: rgba(0, 0, 0, 0.3);
+  --member-text-secondary: #9ca3af;
 }
 
 
