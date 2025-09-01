@@ -72,8 +72,8 @@ export default function Component() {
             className={`px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium transition ease-in-out duration-300 cursor-pointer
             ${
               activeYear === year
-                ? "bg-[var(--ifm-color-primary)] text-white"
-                : "text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-white"
+                ? "bg-[var(--ifm-color-primary)] text-[var(--member-button-active-text)]"
+                : "text-[var(--member-button-text)] bg-[var(--member-button-bg)] hover:bg-[var(--member-button-hover-bg)] hover:text-[var(--member-button-hover-text)]"
             }`}
             onClick={() => setActiveYear(year)}
           >
@@ -83,7 +83,7 @@ export default function Component() {
         {Object.keys(data).length > visibleYearsCount && (
           <div
             onClick={() => setIsExpanded(!isExpanded)}
-            className="px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium bg-[var(--ifm-color-primary)] cursor-pointer transition ease-in-out duration-300 text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-white '"
+            className="px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium cursor-pointer transition ease-in-out duration-300 text-[var(--member-button-text)] bg-[var(--member-button-bg)] hover:bg-[var(--member-button-hover-bg)] hover:text-[var(--member-button-hover-text)]"
           >
             {isExpanded ? "< 收起" : "> 更多"}
           </div>
@@ -106,8 +106,8 @@ export default function Component() {
               className={`px-4 py-2 mr-2 mb-2 whitespace-nowrap rounded text-sm font-medium transition ease-in-out duration-300 cursor-pointer
                         ${
                           activeFocus === focus
-                            ? "bg-[var(--ifm-color-primary)] text-white"
-                            : "text-[var(--ifm-color-primary)] bg-gray-200 hover:bg-[var(--ifm-color-primary-lightest)] hover:text-white"
+                            ? "bg-[var(--ifm-color-primary)] text-[var(--member-button-active-text)]"
+                            : "text-[var(--member-button-text)] bg-[var(--member-button-bg)] hover:bg-[var(--member-button-hover-bg)] hover:text-[var(--member-button-hover-text)]"
                         }`}
               onClick={() => setActiveFocus(focus)}
             >
@@ -120,7 +120,10 @@ export default function Component() {
           {filteredMembers.sort(compareMembers).map((member) => (
             <div
               key={member.avatar}
-              className="flex flex-col items-center gap-1 bg-white dark:bg-gray-950 p-2 rounded-lg shadow-md" // 添加 max-w-xs 和 mx-auto 以限制卡片宽度并在其父容器中居中
+              className="flex flex-col items-center gap-1 bg-[var(--member-card-bg)] p-2 rounded-lg"
+              style={{
+                boxShadow: `0 4px 6px -1px var(--member-card-shadow), 0 2px 4px -1px var(--member-card-shadow)`,
+              }}
             >
               <Avatar>
                 <LazyLoad offset={200}>
@@ -135,7 +138,7 @@ export default function Component() {
                 {/* name */}
                 <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
                 {/* major */}
-                <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">
+                <p className="text-[var(--member-text-secondary)] text-xs mb-1">
                   {member.major}
                 </p>
                 {/* Github link */}
