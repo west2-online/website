@@ -82,9 +82,7 @@ const config: Config = {
   themeConfig: {
     // 色彩模式
     colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
 
     // 首页置顶的公告栏，尽量一句话结束
