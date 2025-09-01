@@ -181,19 +181,6 @@ const config: Config = {
     // 页脚
     footer: {
       style: 'dark',
-      links: [
-        {
-          html: `
-            <div style="display: flex; justify-content: center; align-items: center; color:#FFF;">
-              <span>本网站由</span>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.upyun.com/?from=xi2" style="display: inline-flex; align-items: center;">
-                <img src="/img/upyun_logo.svg" alt="又拍云"  height= "20px" style="margin: 0 5px;" />
-              </a> 
-              <span>提供CDN加速/云存储服务</span>
-            </div>
-          `
-        }
-      ],
       copyright: `版权所有 © ${new Date().getFullYear()} west2-online. 网站使用 Docusaurus 构建.<div/> <a href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备19020557号-3</a> <img src="/img/beian.png" height="14px" width="14px"style="margin: 0 5px;"/>闽公网安备35018302000171号`,
     },
     prism: {
