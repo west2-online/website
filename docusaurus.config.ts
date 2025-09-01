@@ -86,12 +86,11 @@ const config: Config = {
     },
 
     // 首页置顶的公告栏，尽量一句话结束
+    // 颜色配置见 custom.css
     announcementBar: {
       id: 'new_info',
       content:
         '我们发布了工作室成员 2024 开源之夏活动课题申请书！ <a target="_blank" rel="noopener noreferrer" href="https://west2-online.feishu.cn/wiki/XxpXwqtWkiALUwk6ZCqcd6gCnBe">点击查看</a>',
-      backgroundColor: '#fafbfc',
-      textColor: '#091E42',
       isCloseable: false,
     },
 
@@ -101,6 +100,7 @@ const config: Config = {
       logo: {
         alt: 'west2-online logo',
         src: 'img/logo.svg',
+        className: 'bg-white p-1',
       },
       items: [
         {
