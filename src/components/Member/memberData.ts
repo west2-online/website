@@ -1,3 +1,4 @@
+import { data2025 } from "@site/static/member/2025";
 import { data2024 } from "@site/static/member/2024";
 import { data2023 } from "@site/static/member/2023";
 import { data2022 } from "@site/static/member/2022";

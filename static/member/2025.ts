@@ -32,5 +32,5 @@ export const data2025 = [
     {'avatar': '2025/832202111.jpg', 'name': '张光辉', 'focus': 'Java', 'major': '22级自动化', 'github': 'cantback'},
     {'avatar': '2025/102402136.jpg', 'name': '王智洋', 'focus': 'AI', 'major': '24级数据科学与大数据技术', 'github': 'MieSheeeep'},
     {'avatar': '2025/832303126.jpg', 'name': '卓逸', 'focus': 'Unity', 'major': '23级软件工程', 'github': 'rEpt6An'},
-    {'avatar': '2025/102301519.jpg', 'name': '吴昊', 'focus': 'AI', 'major': '23级计算机科学与技术', 'github': 'W2919'},
+    {'avatar': '2025/102301519.jpg', 'name': '吴昊', 'focus': 'AI', 'major': '23级计算机科学与技术', 'github': 'W2919'}
 ]
