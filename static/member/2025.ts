@@ -34,5 +34,6 @@ export const data2025 = [
     {'avatar': '2025/102402136.jpg', 'name': '王智洋', 'focus': 'AI', 'major': '24级数据科学与大数据技术', 'github': 'MieSheeeep'},
     {'avatar': '2025/832303126.jpg', 'name': '卓逸', 'focus': 'Unity', 'major': '23级软件工程', 'github': 'rEpt6An'},
     {'avatar': '2025/102301519.jpg', 'name': '吴昊', 'focus': 'AI', 'major': '23级计算机科学与技术', 'github': 'W2919'},
-    {'avatar': '2025/231027041.jpg', 'name': '高若宸', 'focus': 'Unity', 'major': '23级计算机技术', 'github': 'candiedhawthorn'}
+    {'avatar': '2025/231027041.jpg', 'name': '高若宸', 'focus': 'Unity', 'major': '23级计算机技术', 'github': 'candiedhawthorn'},
+    {'avatar': '2025/832303323.jpg', 'name': '谢灿', 'focus': 'AI', 'major': '23级软件工程', 'github': 'Volcano-Heidi'}
 ]
