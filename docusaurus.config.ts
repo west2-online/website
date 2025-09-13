@@ -90,7 +90,7 @@ const config: Config = {
     announcementBar: {
       id: 'new_info',
       content:
-        '我们发布了工作室成员 2025 开源之夏活动课题申请书！ <a target="_blank" rel="noopener noreferrer" href="https://west2-online.feishu.cn/wiki/KbeXwjWvviMMcNkgg2Wci6fdnHc?from=from_copylink“>点击查看</a>',
+        '我们发布了工作室成员 2025 开源之夏活动课题申请书！ <a target="_blank" rel="noopener noreferrer" href="https://west2-online.feishu.cn/wiki/KbeXwjWvviMMcNkgg2Wci6fdnHc?from=from_copylink">点击查看</a>',
       isCloseable: false,
     },
 
