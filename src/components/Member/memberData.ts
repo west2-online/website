@@ -1,3 +1,4 @@
+import { data2026 } from "@site/static/member/2026";
 import { data2025 } from "@site/static/member/2025";
 import { data2024 } from "@site/static/member/2024";
 import { data2023 } from "@site/static/member/2023";
@@ -97,6 +98,7 @@ export function compareMembers(a: MemberData[string][number], b: MemberData[stri
 
 
 export const memberData: MemberData = {
+  "2026": data2026,
   "2025": data2025,
   "2024": data2024,
   "2023": data2023,
