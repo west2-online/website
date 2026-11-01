@@ -43,7 +43,7 @@ export const data2026 = [
     {'avatar': '2026/102500332.jpg', 'name': '郑雷', 'focus': 'Unity', 'major': '25级软件工程'},
     {'avatar': '2026/102401618.jpg', 'name': '陈佳昕', 'focus': 'Unity', 'major': '24级计算机科学与技术', 'github': 'chen-ult'},
     {'avatar': '2026/052405126.jpg', 'name': '陈元铮', 'focus': 'Unity', 'major': '24级工程管理', 'github': 'D7ALang'},
-    {'avatar': '2026/102500118.jpg', 'name': '陈思翰', 'focus': 'Unity', 'major': '25级软件工程'},
+    {'avatar': '2026/102500118.jpg', 'name': '陈思翰', 'focus': 'Unity', 'major': '25级软件工程', 'github': 'yUk1367'},
     {'avatar': '2026/832504106.jpg', 'name': '陈灼', 'focus': 'Unity', 'major': '25级数字媒体技术', 'github': 'czzzz3425'},
     {'avatar': '2026/102501525.jpg', 'name': '黄泽昊', 'focus': 'Unity', 'major': '25级计算机科学与技术', 'github': 'haozi996'},
     {'avatar': '2026/832504122.png', 'name': '孙领航', 'focus': '产品', 'major': '25数字媒体技术', 'github': 'houdry'},

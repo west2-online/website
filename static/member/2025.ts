@@ -5,7 +5,7 @@ export const data2025 = [
     {'avatar': '2025/212306370.jpg', 'name': '黄炳轩', 'focus': 'Unity', 'major': '23级软件工程'},
     {'avatar': '2025/102300109.jpg', 'name': '郑天浩', 'focus': 'Go', 'major': '23级软件工程', 'github': 'yxrxy'},
     {'avatar': '2025/102201111.jpg', 'name': '江在程', 'focus': 'Java', 'major': '22级计算机科学与技术', 'github': 'ksx919'},
-    {'avatar': '2025/102400232.jpg', 'name': '张伟林', 'focus': 'Unity', 'major': '24级软件工程', 'github': '164321595', 'blog': {'display': ' ', 'url': 'https://164321595.github.io/Static-Blog/'}},
+    {'avatar': '2025/102400232.jpg', 'name': '张伟林', 'focus': 'Unity', 'major': '24级软件工程', 'github': 'Zviolin', 'blog': {'display': ' ', 'url': 'https://zviolin.online/'}},
     {'avatar': '2025/102304205.jpg', 'name': '曹欣怡', 'focus': '美术', 'major': '23级人工智能'},
     {'avatar': '2025/032201218.jpg', 'name': '陈彦哲', 'focus': 'Go', 'major': '23级软件工程', 'github': 'LingeringAutumn'},
     {'avatar': '2025/102300127.jpg', 'name': '李严', 'focus': '产品', 'major': '23软件工程', 'github': 'dechichichi'},
