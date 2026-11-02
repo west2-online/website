@@ -16,6 +16,8 @@ export const data2026 = [
     {'avatar': '2026/102400421.png', 'name': '林凯', 'focus': 'Java', 'major': '24级软件工程', 'github': 'lll-peanut'},
     {'avatar': '2026/832403113.jpg', 'name': '林彦希', 'focus': 'Java', 'major': '24级软件工程', 'github': 'drive888', 'blog': {'display': ' ', 'url': 'https://leoxi.top/'}},
     {'avatar': '2026/102400231.jpg', 'name': '袁志华', 'focus': 'Java', 'major': '24级软件工程', 'github': 'Yzh-lucky'},
+    {'avatar': '2026/112500620.png', 'name': '张治晨', 'focus': 'Java', 'major': '25级集成电路', 'github': 'Ephern'},
+    {'avatar': '2026/832303220.png', 'name': '郑家屹', 'focus': 'Java', 'major': '23级软件工程', 'github': 'q1anz1'},
     {'avatar': '2026/2501120128.jpg', 'name': '谭佳磊', 'focus': 'Java', 'major': '26届信息与信号处理', 'github': 'ytnxneydhsx'},
     {'avatar': '2026/102500106.jpg', 'name': '卢伊涵', 'focus': '前端', 'major': '25级软件工程', 'github': 'Emilia-zuomo'},
     {'avatar': '2026/832403322.png', 'name': '吴佳豪', 'focus': '前端', 'major': '24软件工程'},
@@ -51,4 +53,5 @@ export const data2026 = [
     {'avatar': '2026/832504124.jpeg', 'name': '吴栩婧', 'focus': '美术', 'major': '25级数字媒体技术', 'github': 'Ginkgo77777'},
     {'avatar': '2026/052403137.png', 'name': '王智壹', 'focus': '美术', 'major': '24级计算机科学与技术', 'github': '155TuT'},
     {'avatar': '2026/112501024.png', 'name': '李淑敏', 'focus': '美术', 'major': '25级数字媒体技术'},
+    {'avatar': '2026/052402239.png', 'name': '陈逸轩', 'focus': '美术', 'major': '25级软件工程', 'github': 'ChenXiaoming233'},
 ]
